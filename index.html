@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAEPVision - Compartilhe suas fotografias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>SAEP<span>Vision</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="publicacoes.html">Publicações</a>
+            <a href="perfil.html">Meu perfil</a>
+        </nav>
+
+        <div class="botoes">
+            <a href="login.html" class="btn-login">Entrar</a>
+            <a href="cadastro.html" class="btn-cadastro">Cadastrar</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="apresentacao">
+            <h2>Compartilhe seus melhores momentos!</h2>
+
+            <p>
+                Bem-vindo ao SAEPVision, uma plataforma para compartilhar,
+                descobrir e apreciar fotografias.
+            </p>
+
+            <a href="publicacoes.html" class="btn-principal">
+                Explorar fotografias
+            </a>
+        </section>
+
+        <!-- PESQUISA -->
+        <section class="pesquisa">
+            <h2>Encontre um fotógrafo</h2>
+
+            <div class="campo-pesquisa">
+                <input
+                    type="text"
+                    id="pesquisaFotografo"
+                    placeholder="Digite o nome do fotógrafo..."
+                >
+
+                <button id="btnPesquisar">
+                    Pesquisar
+                </button>
+            </div>
+
+            <p id="mensagemPesquisa"></p>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria">
+            <h2>Fotografias em destaque</h2>
+
+            <div id="galeriaFotos" class="grade-fotos">
+
+                <p>Carregando fotografias...</p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <h3>SAEPVision</h3>
+
+        <p>
+            Compartilhando momentos através da fotografia.
+        </p>
+
+        <p>
+            © 2026 SAEPVision - Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

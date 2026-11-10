@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil - SAEPVision</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/perfil.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <h1>SAEP<span>Vision</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="publicacoes.html">Publicações</a>
+            <a href="perfil.html">Meu perfil</a>
+        </nav>
+
+        <button id="btnSair" class="btn-cadastro">
+            Sair
+        </button>
+
+    </header>
+
+    <main class="conteudo-perfil">
+
+        <!-- INFORMAÇÕES DO PERFIL -->
+        <section class="perfil-cabecalho">
+
+            <div class="avatar" id="avatarUsuario">
+                <span>U</span>
+            </div>
+
+            <div class="dados-perfil">
+
+                <h2 id="nomeUsuario">Carregando perfil...</h2>
+
+                <p id="emailUsuario"></p>
+
+                <p id="tipoUsuario"></p>
+
+                <p id="quantidadePublicacoes">
+                    Publicações: 0
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ÁREA DE PUBLICAÇÃO -->
+        <section id="areaPublicacao" class="area-publicacao">
+
+            <h2>Publicar fotografia</h2>
+
+            <form id="formPublicacao">
+
+                <label for="tituloFoto">
+                    Título da fotografia:
+                </label>
+
+                <input
+                    type="text"
+                    id="tituloFoto"
+                    placeholder="Digite o título"
+                    required
+                >
+
+                <label for="localFoto">
+                    Localização:
+                </label>
+
+                <input
+                    type="text"
+                    id="localFoto"
+                    placeholder="Onde a foto foi tirada?"
+                >
+
+                <label for="imagemFoto">
+                    Escolha uma fotografia:
+                </label>
+
+                <input
+                    type="file"
+                    id="imagemFoto"
+                    accept=".jpg,.jpeg,.png,.gif,.webp,image/jpeg,image/png,image/gif,image/webp"
+                    required
+                >
+
+                <p id="mensagemPublicacao"></p>
+
+                <button type="submit" class="btn-principal">
+                    Publicar fotografia
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- PUBLICAÇÕES DO USUÁRIO -->
+        <section class="minhas-publicacoes">
+
+            <h2>Minhas fotografias</h2>
+
+            <div id="minhasFotos" class="grade-fotos">
+
+                <p>Carregando publicações...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3>SAEPVision</h3>
+
+        <p>Compartilhando momentos através da fotografia.</p>
+
+        <p>© 2026 SAEPVision</p>
+
+    </footer>
+
+</body>
+</html>

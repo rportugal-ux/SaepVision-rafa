@@ -1,0 +1,17 @@
+{
+    "name": "saepvision",
+    "version": "1.0.0",
+    "description": "Plataforma de compartilhamento de fotografias",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.6.1",
+        "express": "^4.22.3",
+        "express-session": "^1.19.0",
+        "multer": "^1.4.5-lts.2",
+        "mysql2": "^3.24.6"
+    }
+}
